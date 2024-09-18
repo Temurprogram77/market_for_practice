@@ -1,0 +1,861 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "inter";
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.header_container {
+  background: #fed100;
+}
+.header {
+  padding: 20px 0;
+  margin: 0 auto;
+  max-width: 800px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo {
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 18px;
+}
+.pages {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.phone_number {
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: underline;
+}
+.menu {
+  cursor: pointer;
+  display: none;
+}
+/* =-=-=-=-=-=-= Aparment =-=-=-=-=-=-=-= */
+.apartment {
+  display: flex;
+  max-width: 800px;
+  margin: 0 auto;
+}
+.person_box {
+  z-index: 2;
+  max-width: 250px;
+  height: 300px;
+}
+.phone_btn {
+  cursor: pointer;
+  margin-top: 200px;
+  margin-left: 200px;
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3d9be9;
+  animation: animation 2s infinite reverse;
+}
+@keyframes animation {
+  0% {
+    box-shadow: none;
+  }
+  50% {
+    box-shadow: 0 0 0 10px #3d9ce958;
+  }
+  100% {
+    box-shadow: transparent;
+  }
+}
+.phone_btn img {
+  width: 30px;
+}
+.background_truck {
+  margin-bottom: 40px;
+  max-width: 280px;
+  transform: translateX(-40px);
+}
+.right_part {
+  max-width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left_part {
+  margin-right: 80px;
+}
+.left_part h1 {
+  line-height: 1;
+  margin-top: 20px;
+  max-width: min-content;
+  font-weight: 700;
+  font-size: 40px;
+}
+.left_part h6 {
+  max-width: fit-content;
+  font-weight: 700;
+  font-size: 18px;
+  margin: 8px 0 18px 0;
+}
+.icons {
+  gap: 10px;
+  margin: 35px 0 0 0;
+  display: flex;
+}
+.icons img {
+  width: 25px;
+}
+.truck,
+.shop,
+.money {
+  align-items: center;
+  display: flex;
+  gap: 7px;
+}
+.truck p,
+.shop p,
+.money p {
+  max-width: 70px;
+  font-size: 9px;
+  font-weight: 600;
+}
+.btn {
+  font-size: 14px;
+  cursor: pointer;
+  width: 180px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  transition: transform 0.3s;
+  background: red;
+}
+.btn:hover {
+  transform: translate(-5px, -5px);
+}
+.big_btn {
+  border: 1px solid white;
+  max-width: fit-content;
+}
+.person_boxing {
+  max-width: 180px;
+  display: none;
+}
+/* -=-=-=-=-=-= Happens =-=-=-=-=-= */
+.happens {
+  max-width: fit-content;
+  margin: 50px auto 40px;
+  font-size: 20px;
+}
+.bottom_happens {
+  margin: 0 auto;
+  max-width: 730px;
+  display: flex;
+  justify-content: center;
+  column-gap: 6rem;
+  row-gap: 2rem;
+  flex-wrap: wrap;
+}
+.bottom_happens h2 {
+  font-weight: 400;
+  font-size: 30px;
+  text-shadow: 2px -1px yellow;
+}
+.writing {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.writing span {
+  font-size: 13px;
+  font-weight: 700;
+}
+.writing p {
+  max-width: 250px;
+  font-size: 11px;
+}
+.one,
+.two,
+.three,
+.four {
+  display: flex;
+  gap: 20px;
+}
+.one h2,
+.two h2,
+.three h2,
+.four h2 {
+  font-size: 35px;
+}
+/* ========== Prices ============ */
+.room_apartment_one,
+.room_apartment_three {
+  transition: all 0.3s;
+  cursor: pointer;
+  width: 260px;
+  height: 320px;
+  border: 1px solid #ebebeb;
+}
+.room_apartment_one:hover,
+.room_apartment_two:hover,
+.room_apartment_three:hover {
+  scale: 1.03;
+  box-shadow: 0 0 20px 3px rgba(128, 128, 128, 0.128);
+}
+.room_apartment_two {
+  transition: all 0.3s;
+  cursor: pointer;
+  width: 260px;
+  height: 320px;
+  border: 1px solid #fed100;
+}
+.button {
+  background: #fed100;
+}
+.prices_wrt {
+  font-size: 20px;
+  font-weight: 500;
+  margin: 70px auto 10px;
+  max-width: fit-content;
+}
+.prices_about {
+  font-size: 15px;
+  font-weight: 500;
+  margin: 0 auto;
+  max-width: fit-content;
+}
+.prices {
+  display: flex;
+  margin: 30px auto 0;
+  max-width: fit-content;
+  gap: 1.5rem;
+}
+.room_apartment_one,
+.room_apartment_two,
+.room_apartment_three {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.room_apartment_one h6,
+.room_apartment_two h6,
+.room_apartment_three h6 {
+  font-size: 15px;
+  margin-bottom: 25px;
+}
+.room_apartment_one h2,
+.room_apartment_two h2,
+.room_apartment_three h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.button {
+  width: 150px;
+  height: 35px;
+  font-size: 13px;
+  font-weight: 500;
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.metr,
+.loader,
+.watch {
+  margin-bottom: 12px;
+  font-size: 12px;
+  font-weight: 500;
+  color: #333333;
+}
+.forward {
+  display: none;
+}
+/* ========== Avtomobil ============= */
+.images_part img {
+  max-width: 400px;
+}
+.avtomobile_container h6 {
+  margin: 20px auto;
+  font-size: 15px;
+  max-width: fit-content;
+}
+.writing_part h6 {
+  margin: 0 0 20px 0;
+}
+.three_box {
+  display: flex;
+  gap: 10px;
+  margin: 0 auto;
+  max-width: fit-content;
+}
+.gazelles,
+.heels,
+.trucks {
+  cursor: pointer;
+  width: 120px;
+  height: 30px;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.gazelles {
+  border: 1px solid #fed100;
+}
+.heels,
+.trucks {
+  border: 1px solid grey;
+}
+.writing_part {
+  margin-left: 40px;
+  display: flex;
+  flex-direction: column;
+}
+.images_part {
+  margin-right: 30px;
+}
+.avtomobil_kg {
+  max-width: fit-content;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+.forward_kg {
+  cursor: pointer;
+}
+.true img {
+  width: 10px;
+}
+.true span {
+  font-size: 12px;
+}
+.btn_metr,
+.btn_metr2 {
+  cursor: pointer;
+  margin-top: 20px;
+  width: 160px;
+  height: 32px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  background: #fed100;
+}
+.btn_metr2 {
+  margin: 0 auto;
+  display: none;
+}
+.true_writing {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.avtomobile_container h5 {
+  display: none;
+  margin: 18px auto 0;
+  max-width: fit-content;
+  font-size: 20px;
+}
+.circle_btns {
+  display: flex;
+  gap: 5px;
+  display: none;
+}
+.span2 {
+  display: none;
+}
+/* ========== stars =========== */
+.reviews_container h3 {
+  padding: 40px 0 20px 0;
+  margin: 0 auto;
+  max-width: fit-content;
+}
+.reviews_container {
+  margin: 20px auto 0;
+  padding: 0 0 20px 0;
+  max-width: 1200px;
+  background: #fed100;
+}
+.reviews_box {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+}
+.date {
+  margin-top: 10px;
+  font-size: 12px;
+}
+.stars img {
+  width: 15px;
+  margin: 0;
+}
+.user_box1 p,
+.user_box2 p,
+.user_box3 p {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 12px;
+}
+.user_box1,
+.user_box2,
+.user_box3 {
+  max-width: 280px;
+}
+.ride {
+  cursor: pointer;
+  text-decoration: underline;
+  font-size: 12px;
+}
+.btn_reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  cursor: pointer;
+  width: 150px;
+  height: 35px;
+  background: transparent;
+  border: 1px solid black;
+  font-size: 15px;
+}
+.images_part {
+  max-width: 400px;
+}
+.map_container img {
+  max-width: 1200px;
+  /* display: none; */
+}
+/* ========== Contact ============ */
+.contact_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 70px 0;
+}
+.contact_container h3 {
+  width: 700px;
+  font-size: 22px;
+  font-weight: 600;
+  display: flex;
+  justify-content: start;
+}
+.span {
+  font-size: 13px;
+  display: flex;
+  width: 700px;
+  justify-content: start;
+  margin-top: 6px;
+  margin-bottom: 10px;
+}
+form {
+  display: flex;
+  align-items: center;
+}
+form input {
+  font-size: 14px;
+  padding: 5px 0;
+  height: 20px;
+  border: none;
+  border-bottom: 1px solid #333333;
+}
+.required_button {
+  margin-left: 80px;
+}
+.required_button button {
+  cursor: pointer;
+  width: 200px;
+  height: 40px;
+  background: red;
+  border: none;
+  font-size: 15px;
+  font-weight: 600;
+  color: white;
+}
+.checkbox_button {
+  margin-top: 6px;
+  font-size: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.inp {
+  display: flex;
+  gap: 2rem;
+}
+.map_container {
+  display: flex;
+  justify-content: center;
+}
+/* ========== Footer =========== */
+.footer {
+  margin: 0 auto;
+  background: #fed100;
+  max-width: 1200px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8rem;
+  height: 200px;
+}
+.footer_logo {
+  margin-bottom: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+.p1 {
+  font-size: 12px;
+  max-width: 150px;
+}
+.p2 {
+  margin-top: 10px;
+  max-width: 160px;
+  font-size: 12px;
+}
+.footer_second_part {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.footer_second_part a {
+  font-size: 12px;
+  font-weight: 500;
+}
+.footer_third_part {
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  height: 110px;
+}
+.icons_part {
+  display: flex;
+  align-items: start;
+  gap: 14px;
+}
+.icons_part img {
+  width: 12px;
+  cursor: pointer;
+}
+.span3 {
+  margin-top: 10px;
+  cursor: pointer;
+  font-size: 12px;
+  text-decoration: underline;
+}
+.footer_fourth_part {
+  height: 120px;
+}
+.footer_btn {
+  width: 170px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 12px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer_number {
+  font-size: 13px;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: underline;
+  cursor: pointer;
+}
+/* ========== Menu =========== */
+.burger_menu {
+  transition: top 0.5s;
+  top: -650px;
+  right: 0;
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 320px;
+  height: 600px;
+  backdrop-filter: blur(10px);
+  background: #fecf0036;
+  border-radius: 20px;
+}
+.close {
+  cursor: pointer;
+  right: 20px;
+  top: 20px;
+  position: absolute;
+}
+.menu_pages {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+/* ========== Responsive ========== */
+@media screen and (max-width: 1200px) {
+  .map_container img {
+    max-width: 800px;
+  }
+  .footer {
+    gap: 6rem;
+  }
+}
+@media screen and (max-width: 815px) {
+  .apartment {
+    display: flex;
+    justify-content: center;
+    max-width: 700px;
+  }
+  .footer {
+    gap: 4rem;
+  }
+  .inp {
+    margin-bottom: 20px;
+  }
+  .contact_container h3 {
+    max-width: fit-content;
+  }
+  .span {
+    max-width: fit-content;
+  }
+  .required_button {
+    margin-left: 20px;
+  }
+  .span {
+    width: 600px;
+  }
+  .contact_container h3 {
+    width: 600px;
+  }
+  .contact_container {
+    flex-direction: column;
+  }
+  .form {
+    flex-direction: column;
+  }
+  .map_container img {
+    max-width: 700px;
+  }
+  .left_part {
+    margin-right: 20px;
+  }
+  .background_truck {
+    display: none;
+  }
+  .phone_btn {
+    display: none;
+  }
+}
+@media screen and (max-width: 768px) {
+  .writing_part {
+    display: none;
+  }
+  .footer {
+    gap: 2rem;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  .span2 {
+    max-width: fit-content;
+    margin: 0 auto;
+    display: block;
+  }
+  .map_container img {
+    max-width: 550px;
+  }
+  .user_box3 {
+    display: none;
+  }
+  .btn_metr2 {
+    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .gazelles,
+  .heels,
+  .trucks {
+    width: fit-content;
+    border: none;
+    border-bottom: 1px solid grey;
+  }
+  .images_part img {
+    max-width: 300px;
+  }
+  .avtomobile_container h6 {
+    display: none;
+  }
+  .forward_kg {
+    display: none;
+  }
+  .images_part {
+    margin: 0;
+  }
+  .logo {
+    margin-left: 20px;
+    font-size: 15px;
+  }
+  .phone_number {
+    font-size: 15px;
+  }
+  .avtomobile_container h5 {
+    display: block;
+  }
+  .circle_btns {
+    max-width: fit-content;
+    margin: 10px auto;
+    display: block;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+  }
+  .circle_btnn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 18px;
+    height: 18px;
+    background: #fed100;
+  }
+  .btn_circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+  }
+  .circle_btn {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: black;
+  }
+}
+@media screen and (max-width: 550px) {
+  .person_boxing {
+    display: block;
+  }
+  .footer_logo {
+    max-width: fit-content;
+    margin: 30px auto 20px;
+  }
+  .footer_second_part {
+    align-items: center;
+  }
+  .footer_third_part {
+    height: auto;
+  }
+  .footer_number {
+    display: none;
+  }
+  .footer_fourth_part {
+    height: 50px;
+  }
+  .p1,
+  .p2 {
+    text-align: center;
+  }
+  .footer {
+    flex-direction: column;
+    height: 100%;
+  }
+  .map_container img {
+    max-width: 300px;
+  }
+  .inp {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact_container {
+    margin-bottom: 30px;
+  }
+  .contact_container h3 {
+    max-width: 200px;
+    text-align: center;
+  }
+  .inp input {
+    width: 250px;
+  }
+  .required_button button {
+    width: 250px;
+  }
+  .required_button {
+    margin: 0;
+  }
+  .user_box2 {
+    display: none;
+  }
+  .room_apartment_one,
+  .room_apartment_three {
+    display: none;
+  }
+  .prices_about {
+    text-align: center;
+  }
+  .forward {
+    display: block;
+  }
+  .writing p {
+    display: none;
+  }
+  .writing span {
+    width: 150px;
+  }
+  .big_btn {
+    margin-bottom: 20px;
+  }
+  .left_part h1 {
+    font-size: 30px;
+    text-align: center;
+  }
+  .left_part h6 {
+    font-size: 15px;
+  }
+  .left_part {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .icons {
+    display: none;
+  }
+  .person_box {
+    display: none;
+  }
+  .pages {
+    display: none;
+  }
+  .phone_number {
+    display: none;
+  }
+  .menu {
+    display: block;
+  }
+}
+@media screen and (max-width: 340px) {
+  .images_part img {
+    max-width: 260px;
+  }
+}
